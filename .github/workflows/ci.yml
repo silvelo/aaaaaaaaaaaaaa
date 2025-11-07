@@ -21,10 +21,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Black
-        run: black --check .
+        run: flake8 .
 
       - name: Run Flake
-        run: flake8 .
+        run: black --check .
 
       - name: Testing
         run: pytest -q
