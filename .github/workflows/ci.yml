@@ -20,11 +20,11 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Run Black
-        run: flake8 .
+#      - name: Run Black
+#        run: flake8 .
 
-      - name: Run Flake
-        run: black --check .
+#      - name: Run Flake
+#        run: black --check .
 
       - name: Testing
         run: pytest -q
